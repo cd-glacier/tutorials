@@ -1,0 +1,61 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set(/Users/glacier/Desktop/hello/Hello.scala, /Users/glacier/Desktop/hello/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set(/Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$10.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$7.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$15.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$4.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$9.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$12.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$13.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$5.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$14.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$9$$anonfun$apply$mcVI$sp$1.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$3.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$11.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$8.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$6.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$2.class, /Users/glacier/Desktop/hello/target/scala-2.11/classes/Hello$$anonfun$1.class)[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/Users/glacier/Desktop/hello/Hello.scala, /Users/glacier/Desktop/hello/Stuff.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set(/Users/glacier/Desktop/hello/Hello.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/glacier/Desktop/hello/Hello.scala, /Users/glacier/Desktop/hello/Stuff.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/glacier/Desktop/hello/Hello.scala, /Users/glacier/Desktop/hello/Stuff.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala, /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 2 sources: invalidated sources (4) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/target/scala-2.11/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 6a7e14bf, interfacing (CompilerInterface) with Scala compiler version 2.11.8[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_66.jdk/Contents/Home/jre/classes:/Users/glacier/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0mScala compilation took 9.255060993 s[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Hello.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, map, equals, list3, urls, asInstanceOf, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Hello, message, toString, !=, getClass, list2, ne, eq, ##, list, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/glacier/Dropbox/dev/src/github.com/g-hyoga/tutorial/scala/hello-scala/Stuff.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/glacier/Desktop/hello/Hello.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/glacier/Desktop/hello/Hello.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/glacier/Desktop/hello/Hello.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/glacier/Desktop/hello/Hello.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/glacier/Desktop/hello/Hello.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	notify, wait, $asInstanceOf, map, equals, list3, urls, asInstanceOf, synchronized, $isInstanceOf, main, notifyAll, isInstanceOf, ==, clone, Hello, message, toString, !=, getClass, list2, ne, eq, ##, list, finalize, hashCode.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating /Users/glacier/Desktop/hello/Stuff.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidating (transitively) by inheritance from /Users/glacier/Desktop/hello/Stuff.scala...[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set(/Users/glacier/Desktop/hello/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated by transitive inheritance dependency: Set(/Users/glacier/Desktop/hello/Stuff.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] The /Users/glacier/Desktop/hello/Stuff.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m[naha] 	.[0m
+[0m[[0mdebug[0m] [0m[naha] All member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0m[naha] New invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Previously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m[naha] 	Set()[0m
+[0m[[0mdebug[0m] [0m[naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
