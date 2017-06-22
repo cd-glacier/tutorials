@@ -1,3 +1,5 @@
+import Data.Char
+
 {-
 a = 1
 b = 2
@@ -21,6 +23,14 @@ length' [] = 0
 length' (_:xs) = 1 + length' xs
 -- tapple
 addsub x y = (x+y, x-y)
+-- insert sort
+insert x [] = [x]
+insert x (y:ys)
+	| x < y =  x : y : ys
+  | otherwise = y : insert x ys
+	
+isort [] = []
+isort (x:xs) = insert x (isort xs)
 
 main = do
 	print "Hello World!"
@@ -39,6 +49,7 @@ main = do
 	print $ second e
 	print $ length' d 
 	print $ addsub 1 11
+	traceIO $ shoe $ isort [13, 14, 15]
 	-- variable
 	 where 
 		a = 1
