@@ -6,10 +6,10 @@ object NumEnglishDictionary {
 }
 
 object Main {
-    def main(args: Array[String]): Unit = {
-      println(NumEnglishDictionary.translate(Some(1)))
-      println(NumEnglishDictionary.translate(Some(3)))
-      println(NumEnglishDictionary.translate(None))
+  def main(args: Array[String]): Unit = {
+    println(NumEnglishDictionary.translate(Some(1)))
+    println(NumEnglishDictionary.translate(Some(3)))
+    println(NumEnglishDictionary.translate(None))
   }
 }
 

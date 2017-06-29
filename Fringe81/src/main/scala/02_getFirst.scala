@@ -1,5 +1,4 @@
 object GetFirst {
-
   def getFirst(value: Option[String]): String = {
     if (value.isDefined) {
       value.head.toString

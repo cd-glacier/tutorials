@@ -1,5 +1,3 @@
-
-
 object PassStudents {
 
   def haveEnglishAndMath(m: Map[String, Int]): Boolean = {
