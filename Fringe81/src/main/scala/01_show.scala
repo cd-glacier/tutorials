@@ -1,7 +1,7 @@
 object Show {
   
   def show(value: Option[String]): Unit = {
-    value.map( v => println(v))
+    value.map(println(_))
   }
 
   def main(args: Array[String]): Unit = {
