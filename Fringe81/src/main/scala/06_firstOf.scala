@@ -18,12 +18,12 @@ object FirstOf {
 
   def main(args: Array[String]): Unit = {
     val r1 = firstOf(Future{ Thread.sleep(9000); 1 }, Future{ Thread.sleep(3000); 2 })
-    println(Await.ready(r1, 10000 millisecond))
-		println(Await.result(r1, Duration.Inf)) // 3s後に2と表示
+    println(Await.result(r1, Duration.Inf)) // 3s後に2と表示
 
-		val r2 = firstOf(Future{ Thread.sleep(900); 1 }, Future.failed(new Exception))
-		r2.value.get.isFailure // こちらは失敗が確定しているFutureを渡すので即trueが返る
-	}
+    val r2 = firstOf(Future{ Thread.sleep(900); 1 }, Future.failed(new Exception))
+    r2.value.get.isFailure // こちらは失敗が確定しているFutureを渡すので即trueが返る
+    println(r2.value.get.isFailure)
+  }
 }
 
 
