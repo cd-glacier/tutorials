@@ -5,12 +5,17 @@ object PassStudents {
   }
 
   def passStudents(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
-    // 普通にfilterとかmap使えるんですね...すごい...
+    /* 
     scores.filter{ case (_, score) =>
-        haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
-    }.map{ case (name, score) =>
-      name -> (score("math") + score("english")) / 2
-    }
+      haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
+      }.map{ case (name, score) =>
+        name -> (score("math") + score("english")) / 2
+      }
+      */
+
+    scores.collect { case (_, score) => 
+      haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
+    } 
   }
 
   def main(args: Array[String]): Unit = {

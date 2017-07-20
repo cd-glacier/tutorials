@@ -1,5 +1,5 @@
 import scala.concurrent.duration.Duration
-import scala.concurrent.{Await, Future}
+import scala.concurrent._
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import scala.language.postfixOps
@@ -7,13 +7,14 @@ import scala.util.{Failure, Success}
 
 object FirstOf {
   def firstOf[A](v1: Future[A], v2: Future[A]): Future[A] = {
-    if(v1.isCompleted && !(v2.isCompleted)) {
-      v1
-    } else if (!(v1.isCompleted) && v2.isCompleted) {
-      v2
-    } else {
-      firstOf(v1, v2)
+    val p = Promise[A]()
+    v1 onSuccess {
+      case v => p.tryComplete(v)
     }
+    v2 onSuccess {
+      case v => p.tryComplete(v)
+    }
+    p.fututre
   }
 
   def main(args: Array[String]): Unit = {

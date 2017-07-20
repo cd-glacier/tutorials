@@ -1,5 +1,4 @@
 object Show {
-  
   def show(value: Option[String]): Unit = {
     value.foreach(println)
   }
