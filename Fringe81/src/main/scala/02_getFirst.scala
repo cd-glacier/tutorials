@@ -1,7 +1,12 @@
 object GetFirst {
   def getFirst(value: Option[String]): String = {
-    // Optionにつつまれている時はgetで取り出してから使う必要があると思い込んでいました...
-    value.headOption.getOrElse("").toString
+    value.map{ v => 
+      if (v.isEmpty) {
+        ""
+      } else {
+        v.head.toString
+      }
+    }.getOrElse("")
   }
 
   def main(args: Array[String]): Unit = {
