@@ -8,13 +8,16 @@ object PassStudents {
     /* 
     scores.filter{ case (_, score) =>
       haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
-      }.map{ case (name, score) =>
-        name -> (score("math") + score("english")) / 2
-      }
-      */
+    }.map{ case (name, score) =>
+      name -> (score("math") + score("english")) / 2
+    }
+    */
 
-    scores.collect { case (_, score) => 
-      haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
+    scores.collect { info => 
+      info match {
+        case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
+          info.name -> (info.score("math") + info.score("english")) / 2
+      }
     } 
   }
 
