@@ -1,9 +1,7 @@
 object NumEnglishDictionary {
   private val dictionary = Map(1->"one", 2->"two")
   def translate(num: Option[Int]): Option[String] = {
-    num.map{
-      dictionary.get
-    }.getOrElse(None)
+    num.flatMap(dictionary.get(_))
   }
 }
 
