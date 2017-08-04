@@ -1,12 +1,7 @@
 object GetFirst {
   def getFirst(value: Option[String]): String = {
-    value.map{ v => 
-      if (v.isEmpty) {
-        ""
-      } else {
-        v.head.toString
-      }
-    }.getOrElse("")
+    //から文字返してくれるのありがたい...
+    value.map(_.take(1).toString).getOrElse("")
   }
 
   def main(args: Array[String]): Unit = {
