@@ -11,14 +11,27 @@ object PassStudents {
     }.map{ case (name, score) =>
       name -> (score("math") + score("english")) / 2
     }
-    */
 
+    scores.flatMap{ case (name, score) =>
+      if (haveEnglishAndMath(score)) Some(name -> score) else None
+    }.flatMap { case (name, score) =>
+      if ((score("math") + score("english")) / 2 >= 80){
+        Some(name -> (score("math") + score("english")) / 2)
+      } else {
+        None
+      } 
+    }.flatMap{ case (name, ave) =>
+      Map(name -> ave)
+    }
+    */
+    
     scores.collect { info => 
-      info match {
-        case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
-          info.name -> (info.score("math") + info.score("english")) / 2
+        info match {
+          case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
+            info.name -> (info.score("math") + info.score("english")) / 2
+        }
       }
-    } 
+
   }
 
   def main(args: Array[String]): Unit = {
