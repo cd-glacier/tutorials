@@ -5,13 +5,14 @@ object PassStudents {
   }
 
   def passStudents(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
-    /* 
     scores.filter{ case (_, score) =>
       haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80
     }.map{ case (name, score) =>
       name -> (score("math") + score("english")) / 2
     }
+  }
 
+  def passStudents2(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
     scores.flatMap{ case (name, score) =>
       if (haveEnglishAndMath(score)) Some(name -> score) else None
     }.flatMap { case (name, score) =>
@@ -23,17 +24,19 @@ object PassStudents {
     }.flatMap{ case (name, ave) =>
       Map(name -> ave)
     }
-    */
-    
-    scores.collect { info => 
-        info match {
-          case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
-            info.name -> (info.score("math") + info.score("english")) / 2
-        }
-      }
-
   }
 
+  /*
+  def passStudents3(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
+    scores.collect { info => 
+      info match {
+        case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
+          info.name -> (info.score("math") + info.score("english")) / 2
+      }
+    }
+  }
+  */
+ 
   def main(args: Array[String]): Unit = {
     val scores = Map(
       "ichiro" -> Map("math"->82, "english"->99),
@@ -43,6 +46,8 @@ object PassStudents {
       "hanako" -> Map("math"->84, "english"->78, "social"->66))
 
     println(passStudents(scores))
+    println(passStudents2(scores))
+    //println(passStudents3(scores))
   }
 }
 
