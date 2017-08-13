@@ -17,25 +17,21 @@ object PassStudents {
       if (haveEnglishAndMath(score)) Some(name -> score) else None
     }.flatMap { case (name, score) =>
       if ((score("math") + score("english")) / 2 >= 80){
-        Some(name -> (score("math") + score("english")) / 2)
+        Some(name -> score)
       } else {
         None
       } 
-    }.flatMap{ case (name, ave) =>
-      Map(name -> ave)
+    }.flatMap{ case (name, score) =>
+      Map(name -> (score("math") + score("english")) / 2)
     }
   }
 
-  /*
   def passStudents3(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
-    scores.collect { info => 
-      info match {
-        case haveEnglishAndMath(info.score) && (info.score("math") + info.score("english")) / 2 >= 80 => 
-          info.name -> (info.score("math") + info.score("english")) / 2
-      }
+    scores.collect { case info =>
+      println(info)
+      Map("hoge"->1)
     }
   }
-  */
  
   def main(args: Array[String]): Unit = {
     val scores = Map(
@@ -47,7 +43,7 @@ object PassStudents {
 
     println(passStudents(scores))
     println(passStudents2(scores))
-    //println(passStudents3(scores))
+    println(passStudents3(scores))
   }
 }
 

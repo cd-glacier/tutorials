@@ -8,13 +8,9 @@ import scala.util.{Failure, Success}
 object FirstOf {
   def firstOf[A](v1: Future[A], v2: Future[A]): Future[A] = {
     val p = Promise[A]()
-    v1 onSuccess {
-      case v => p.tryComplete(v)
-    }
-    v2 onSuccess {
-      case v => p.tryComplete(v)
-    }
-    p.fututre
+    p.completeWith(v1)
+    p.completeWith(v2)
+    p.future
   }
 
   def main(args: Array[String]): Unit = {
