@@ -26,11 +26,10 @@ object PassStudents {
     }
   }
 
-  def passStudents3(scores: Map[String, Map[String, Int]]): Map[String, Int] = {
-    scores.collect { case info =>
-      println(info)
-      Map("hoge"->1)
-    }
+  def passStudents3(scores: Map[String, Map[String, Int]]): Map[String, Int]= {
+    scores.collect { case (name, score) if (haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80) =>
+      name -> (score("math") + score("english")) / 2
+    }.toMap
   }
  
   def main(args: Array[String]): Unit = {
