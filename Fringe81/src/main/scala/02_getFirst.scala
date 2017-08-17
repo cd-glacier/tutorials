@@ -1,7 +1,7 @@
 object GetFirst {
   def getFirst(value: Option[String]): String = {
     //から文字返してくれるのありがたい...
-    value.map(_.take(1).toString).getOrElse("")
+    value.map(_.take(1)).getOrElse("")
   }
 
   def main(args: Array[String]): Unit = {
