@@ -31,6 +31,17 @@ object PassStudents {
       name -> (score("math") + score("english")) / 2
     }.toMap
   }
+
+  /*
+  def passStudents4(scores: Map[String, Map[String, Int]]): Map[String, Int]= {
+    for((name, score) <- scores) yield  {
+      if (haveEnglishAndMath(score) && (score("math") + score("english")) / 2 >= 80) {
+      Map(name -> score("math") + score("english") / 2)
+      }
+    } 
+  }
+  */
+
  
   def main(args: Array[String]): Unit = {
     val scores = Map(
@@ -43,6 +54,7 @@ object PassStudents {
     println(passStudents(scores))
     println(passStudents2(scores))
     println(passStudents3(scores))
+    println(passStudents4(scores))
   }
 }
 
