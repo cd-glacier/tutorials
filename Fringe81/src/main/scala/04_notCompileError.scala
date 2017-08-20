@@ -9,7 +9,8 @@ object NotCompileError {
     val mOpt: Option[Map[Int, String]] = Some(m)
 
     println(mOpt.get(1))  // return one
-    println(mOpt.get.get(1).get)  // これの省略...?
+    println(mOpt.get)     // equal m
+    println(m(1))         // m(1) == "one"
   }
 }
 
