@@ -35,17 +35,14 @@ object List {
   }
 
   def dropWhile[A](l: List[A], f: A => Boolean): List[A] = l match {
-    case Nil => Nil
-    case Cons(x, xs) => {
-      if (f(x)) dropWhile(xs, f)
-      else Cons(x, dropWhile(xs, f))
-    }
+    case Cons(x, xs) if f(x) => dropWhile(xs, f)
+    case _ => l
   }
 
   def append[A](a1: List[A], a2: List[A]): List[A] = {
     a1 match {
       case Nil => a2
-      case Cons(h, t) => Cons(h, append(t, a2))
+      case Cons(h, t) => Cons(h, append(t, a2)) 
     }
   }
 
@@ -58,18 +55,19 @@ object List {
 
 object Exe3_1 {
   def main(args: Array[String]): Unit = {
-    val x = List(1, 2, 3, 4, 5) match {
-      case Cons(x, Cons(2, Cons(4, _))) => x
-      case Nil => 42
-      case Cons(x, Cons(y, Cons(3, Cons(4, _)))) => x + y
-    }
-    println(x)
+    //val x = List(1, 2, 3, 4, 5) match {
+    //  case Cons(x, Cons(2, Cons(4, _))) => x
+    //  case Nil => 42
+    //  case Cons(x, Cons(y, Cons(3, Cons(4, _)))) => x + y
+    //}
+    //println(x)
 
     println(List.tail(List(1, 2, 3)))
     println(List.setHead(0, List(1, 2, 3)))
     println(List.drop(List(1, 2, 3), 2))
-    println(List.dropWhile(List(1, 2, 3), (x:Int) => x==2))
+    println(List.dropWhile(List(1, 2, 3), (x:Int) => x!=2))
     println(List.init(List(1, 2, 3)))
+    println(List.append(List(1, 2, 3), List(1, 2, 3)))
   }
 }
 

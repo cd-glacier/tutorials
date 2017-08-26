@@ -55,12 +55,11 @@ object MyModule {
     (b: B) => f(a, b)
   }
 
-  /*
   def main(args: Array[String]): Unit = {
     println(formatAbs(-42))
     println(formatFactorial(7))
 
     println(isSorted(Array(1, 2, 3), (x: Int, y: Int) => x > y))
+    println(Some("hoge"))
   }
-  */
 }
