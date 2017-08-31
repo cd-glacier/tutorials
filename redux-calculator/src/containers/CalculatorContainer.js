@@ -40,7 +40,7 @@ class CalculatorContainer extends Component {
 					<PushedBtn pushed_btn={calculator.pushedBtn} />
 					<Result result={calculator.showingResult ? calculator.resultValue : 0} />
 				</div>
-				<div>
+								<div>
 					<ClearBtn onClick={actions.onClearClick} />
 				</div>
 			</div>

@@ -60,5 +60,6 @@ object MyModule {
     println(formatFactorial(7))
 
     println(isSorted(Array(1, 2, 3), (x: Int, y: Int) => x > y))
+    println(Some("hoge"))
   }
 }
