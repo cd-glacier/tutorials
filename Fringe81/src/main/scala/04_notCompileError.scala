@@ -10,7 +10,7 @@ object NotCompileError {
 
     println(mOpt.get.apply(1))  // return one
     println(mOpt.get)     // equal m
-    println(m(1))         // m(1) == "one"
+    println(m.apply(1))         // m(1) == "one"
   }
 }
 
