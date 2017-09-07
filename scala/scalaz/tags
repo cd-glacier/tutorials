@@ -1,0 +1,58 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Cons	src/main/datastructures/List.scala	/^case class Cons[+A](head: A, tail: List[A]) extends List[A]$/;"	c
+Cons	src/main/scala/Exe3_1.scala	/^case class Cons[+A](head: A, tail: List[A]) extends List[A]$/;"	c
+Exe2_3	src/main/scala/Exe2_3.scala	/^object Exe2_3 {$/;"	o
+Exe3_1	src/main/scala/Exe3_1.scala	/^object Exe3_1 {$/;"	o
+List	src/main/datastructures/List.scala	/^object List {$/;"	o
+List	src/main/scala/Exe3_1.scala	/^object List {$/;"	o
+Main	chap02/hoge.scala	/^object Main extends App {$/;"	o
+Main	chap02/paiza.scala	/^object Main extends App {$/;"	o
+MyModule	src/main/scala/MyModule.scala	/^object MyModule {$/;"	o
+a	chap02/exe2_2_isSorted.scala	/^val a = Array("foo", "fuga", "hoge")$/;"	C
+abs	src/main/scala/MyModule.scala	/^  def abs(n: Int): Int = {$/;"	m
+append	src/main/scala/Exe3_1.scala	/^  def append[A](a1: List[A], a2: List[A]): List[A] = {$/;"	m
+apply	src/main/datastructures/List.scala	/^  def apply[A](as: A*): List[A] = {$/;"	m
+apply	src/main/scala/Exe3_1.scala	/^  def apply[A](as: A*): List[A] = {$/;"	m
+b	chap02/exe2_2_isSorted.scala	/^val b = Array(1, 2, 3, 4)$/;"	C
+compose	chap02/exe2_5_compose.scala	/^def compose[A, B, C](f: B => C, g: A => B): A => C = {$/;"	m
+compose	src/main/scala/Exe2_3.scala	/^  def compose[A, B, C](f: B => C, g: A => B): A => C = {$/;"	m
+curry	chap02/exe2_3_curry_uncurry.scala	/^def curry[A, B, C] (f: (A, B) => C): A => (B => C) = {$/;"	m
+curry	src/main/scala/Exe2_3.scala	/^  def curry[A, B, C](f: (A, B) => C): A => (B => C) = {$/;"	m
+drop	src/main/scala/Exe3_1.scala	/^  def drop[A](l: List[A], n: Int): List[A] = {$/;"	m
+dropWhile	src/main/scala/Exe3_1.scala	/^  def dropWhile[A](l: List[A], f: A => Boolean): List[A] = l match {$/;"	m
+factorial	chap02/exe2_1_fib.scala	/^def factorial(n: Int): Int = {$/;"	m
+factorial	src/main/scala/MyModule.scala	/^  def factorial(n: Int): Int = {$/;"	m
+fib	chap02/exe2_1_fib.scala	/^def fib(n: Int): Int = {$/;"	m
+findFirst	chap02/exe2_2_isSorted.scala	/^def findFirst[A](as: Array[A], p: A => Boolean): Int = {$/;"	m
+findFirst	src/main/scala/MyModule.scala	/^  def findFirst[A](as: Array[A], p: A => Boolean): Int = {$/;"	m
+fpinscala	src/main/datastructures/List.scala	/^package fpinscala$/;"	p
+go	chap02/exe2_1_fib.scala	/^  def go(a: Int, b: Int, n: Int): Int =$/;"	m
+go	chap02/exe2_1_fib.scala	/^  def go(n: Int, acc: Int): Int =$/;"	m
+go	src/main/scala/MyModule.scala	/^    def go(n: Int, acc: Int): Int = {$/;"	m
+init	src/main/scala/Exe3_1.scala	/^  def init[A](l: List[A]): List[A] = l match {$/;"	m
+isSorted	chap02/exe2_2_isSorted.scala	/^def isSorted[A](as: Array[A], p: (A, A) => Boolean): Boolean = {$/;"	m
+isSorted	src/main/scala/MyModule.scala	/^  def isSorted[A](as: Array[A], ordered: (A, A) => Boolean): Boolean = {$/;"	m
+judge	chap02/paiza.scala	/^  def judge(t: String, points: List[Int]): Boolean = {$/;"	m
+loop	chap02/exe2_2_isSorted.scala	/^  def loop(n: Int): Boolean = {$/;"	m
+loop	chap02/exe2_2_isSorted.scala	/^  def loop(n: Int): Int =$/;"	m
+loop	src/main/scala/MyModule.scala	/^    def loop(n: Int): Boolean = {$/;"	m
+loop	src/main/scala/MyModule.scala	/^    def loop(n: Int):Int = {$/;"	m
+main	src/main/scala/Exe3_1.scala	/^  def main(args: Array[String]): Unit = {$/;"	m
+main	src/main/scala/MyModule.scala	/^  def main(args: Array[String]): Unit = {$/;"	m
+major	chap02/paiza.scala	/^    var major = 0$/;"	l
+msg	src/main/scala/MyModule.scala	/^    val msg = "The %s value of %d is %d."$/;"	C
+partical	src/main/scala/MyModule.scala	/^  def partical[A, B, C](a: A, f:(A, B) => C): B => C = {$/;"	m
+printShape	chap02/hoge.scala	/^  def printShape(x: Int): Unit = {$/;"	m
+product	src/main/datastructures/List.scala	/^  def product(ds: List[Double]): Double = ds match {$/;"	m
+product	src/main/scala/Exe3_1.scala	/^  def product(ds: List[Double]): Double = ds match {$/;"	m
+setHead	src/main/scala/Exe3_1.scala	/^  def setHead[A](d: A, li: List[A]): List[A] = li match {$/;"	m
+sum	src/main/datastructures/List.scala	/^  def sum(ints: List[Int]):Int = ints match {$/;"	m
+sum	src/main/scala/Exe3_1.scala	/^  def sum(ints: List[Int]):Int = ints match {$/;"	m
+tail	src/main/scala/Exe3_1.scala	/^  def tail[A](ds: List[A]): List[A] = ds match {$/;"	m
+uncurry	chap02/exe2_3_curry_uncurry.scala	/^def uncurry[A, B, C](f: A => B => C): (A, B) => C = {$/;"	m
+uncurry	src/main/scala/Exe2_3.scala	/^  def uncurry[A, B, C](f: A => B => C): (A, B) => C = {$/;"	m
