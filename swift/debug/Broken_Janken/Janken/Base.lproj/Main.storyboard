@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xqn-Ml-esR">
+                                <rect key="frame" x="50" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark2.png" translatesAutoresizingMaskIntoConstraints="NO" id="H4u-8r-nxF">
+                                <rect key="frame" x="108" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark3.png" translatesAutoresizingMaskIntoConstraints="NO" id="Y6Z-GT-C0T">
+                                <rect key="frame" x="166" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなた" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81K-NO-tzo">
+                                <rect key="frame" x="20" y="162" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あいて" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GO5-Zr-rXz">
+                                <rect key="frame" x="562" y="162" width="85" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand_?.png" translatesAutoresizingMaskIntoConstraints="NO" id="zdd-EA-AGo">
+                                <rect key="frame" x="121" y="97" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hand_?.png" translatesAutoresizingMaskIntoConstraints="NO" id="EjP-UW-miu">
+                                <rect key="frame" x="366" y="97" width="180" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark1.png" translatesAutoresizingMaskIntoConstraints="NO" id="jUG-cC-Yla">
+                                <rect key="frame" x="451" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark2.png" translatesAutoresizingMaskIntoConstraints="NO" id="jzD-pa-bE6">
+                                <rect key="frame" x="509" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mark3.png" translatesAutoresizingMaskIntoConstraints="NO" id="uU3-t5-47H">
+                                <rect key="frame" x="567" y="20" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOd-kR-w74">
+                                <rect key="frame" x="220" y="285" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="janken_gu.png"/>
+                                <connections>
+                                    <action selector="selectHand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyk-tm-6vL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vy-Hh-Y2u">
+                                <rect key="frame" x="298" y="285" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="janken_choki.png"/>
+                                <connections>
+                                    <action selector="selectHand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7s5-98-zL8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25W-JY-SUY">
+                                <rect key="frame" x="376" y="285" width="70" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="janken_pa.png"/>
+                                <connections>
+                                    <action selector="selectHand:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kLC-Aj-yiG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あいこ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuG-9M-KVO">
+                                <rect key="frame" x="281" y="20" width="104" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28235294117647058" green="0.73333333333333328" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="hand_choki" destination="6vy-Hh-Y2u" id="EIi-8B-8cs"/>
+                        <outlet property="hand_gu" destination="OOd-kR-w74" id="AfU-GD-W4y"/>
+                        <outlet property="hand_pa" destination="25W-JY-SUY" id="qxE-g7-fl7"/>
+                        <outlet property="me" destination="zdd-EA-AGo" id="Rw4-DO-kFj"/>
+                        <outlet property="me1" destination="Xqn-Ml-esR" id="7Yh-57-Zbh"/>
+                        <outlet property="me2" destination="H4u-8r-nxF" id="BbK-O3-WWT"/>
+                        <outlet property="me3" destination="Y6Z-GT-C0T" id="qmi-RC-AXt"/>
+                        <outlet property="npc" destination="EjP-UW-miu" id="rFB-yM-8io"/>
+                        <outlet property="npc1" destination="jUG-cC-Yla" id="OGG-bg-M9r"/>
+                        <outlet property="npc2" destination="jzD-pa-bE6" id="XK4-54-ND6"/>
+                        <outlet property="npc3" destination="uU3-t5-47H" id="ZcG-Zc-HI3"/>
+                        <outlet property="resultLabel" destination="nuG-9M-KVO" id="Eis-EO-36i"/>
+                        <segue destination="kWu-iA-PMz" kind="presentation" identifier="win" id="QQ5-J3-NT8"/>
+                        <segue destination="Nxq-Il-SOb" kind="presentation" identifier="lose" id="o1Q-t5-saj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.733133433283363" y="28"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hC7-fr-cUb">
+            <objects>
+                <viewController storyboardIdentifier="win" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kWu-iA-PMz" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ve-U5-xVe"/>
+                        <viewControllerLayoutGuide type="bottom" id="BAa-RR-y16"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="97J-FC-T3a">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pose_win.png" translatesAutoresizingMaskIntoConstraints="NO" id="uh6-3E-Y3U">
+                                <rect key="frame" x="173" y="27" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bld-M2-Feo">
+                                <rect key="frame" x="507" y="317" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="もうひと勝負">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="6pk-Fq-7Nf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.58256461268797244" blue="0.44589385778044222" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RU6-Wl-RXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778.56071964017997" y="-375.19999999999999"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eH6-ak-Jfm">
+            <objects>
+                <viewController storyboardIdentifier="lose" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Nxq-Il-SOb" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LLi-0c-CVY"/>
+                        <viewControllerLayoutGuide type="bottom" id="nDI-Be-2FQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xBV-bU-8Dt">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pose_lose.png" translatesAutoresizingMaskIntoConstraints="NO" id="1Iq-sL-d2V">
+                                <rect key="frame" x="173" y="27" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Wk-Cd-Bl2">
+                                <rect key="frame" x="507" y="317" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="もうひと勝負">
+                                    <color key="titleColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Qdm-sU-eGC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.74207524817129311" green="0.61610660929328931" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bb-hb-aEX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="778.56071964017997" y="524"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hand_?.png" width="248" height="316"/>
+        <image name="janken_choki.png" width="422" height="461"/>
+        <image name="janken_gu.png" width="416" height="416"/>
+        <image name="janken_pa.png" width="474" height="436"/>
+        <image name="mark1.png" width="553" height="553"/>
+        <image name="mark2.png" width="553" height="553"/>
+        <image name="mark3.png" width="553" height="553"/>
+        <image name="pose_lose.png" width="373" height="400"/>
+        <image name="pose_win.png" width="733" height="800"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Qdm-sU-eGC"/>
+    </inferredMetricsTieBreakers>
+</document>
