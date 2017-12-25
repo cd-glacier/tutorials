@@ -1,11 +1,12 @@
 object NumEnglishDictionary {
   private val dictionary = Map(1->"one", 2->"two")
   def translate(num: Option[Int]): Option[String] = {
-    num.flatMap(dictionary.get)
+    //num.flatMap(dictionary.get)
+    num.collect(dictionary)
   }
-  
+
   def translate2(num: Option[Int]): Option[String] = {
-    num.collect{ case i if dictionary.isDefinedAt(i) => 
+    num.collect{ case i if dictionary.isDefinedAt(i) =>
       dictionary.get(i).get
     }
   }
