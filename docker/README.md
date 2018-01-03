@@ -20,8 +20,7 @@ docker pull centos:7
  * -a: 全てのタグ
 
 
-# iamgeの一覧表示
-
+# iamgeの一覧表示 
 ```
 docker images
 ```
@@ -70,6 +69,14 @@ docker run -it --name "test" centos:7 /bin/cal
  * -d: deamon. バックグラウンドで実行する
  * -rm: 実行完了後に自動でコンテナを削除する
 
+### ポートのマッピング
+
+```
+docker run -d -p 8080:80 httpd
+```
+
+ホストのポート8080とコンテナのポート80をマッピング
+
 # logを確認する
 
 ```
@@ -81,4 +88,17 @@ image idを指定
 ## オプション
 
  * -t: タイムスタンプを確認する
+
+# 稼働しているコンテナの確認
+
+```
+docker ps
+```
+
+# 稼働しているコンテナの稼働状況の確認
+
+```
+docker status [コンテナ識別子]
+```
+
 
