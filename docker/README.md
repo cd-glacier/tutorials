@@ -161,7 +161,13 @@ docker port [コンテナ識別子]
 # コンテナの名前変更
 
 ```
-docker rename [old name] [new name]
+docker rename [old_name] [new_name]
+```
+
+# コンテナからimageの作成
+
+```
+docker commit [コンテナ識別子] [image_name:tag_name]
 ```
 
 
