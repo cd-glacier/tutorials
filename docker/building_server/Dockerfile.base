@@ -1,0 +1,11 @@
+
+FROM centos:latest
+
+MAINTAINER 0.1 g-hyoga 
+
+RUN ["yum", "-y", "install", "httpd"]
+
+ONBUILD ADD website.tar /var/www/html/
+
+CMD ["usr/sbin/httpd", "-D", "FOREGROUND"]
+ 
