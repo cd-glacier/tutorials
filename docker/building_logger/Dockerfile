@@ -5,4 +5,4 @@ MAINTAINER 0.1 g-hyoga
 
 RUN ["mkdir", "/var/log/httpd"]
 
-VOLUME ./log
+VOLUME /var/log/httpd

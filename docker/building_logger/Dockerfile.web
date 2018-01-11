@@ -1,0 +1,7 @@
+FROM centos:latest
+
+MAINTAINER 0.1 g-hyoga
+
+RUN ["yum", "-y", "install", "httpd"]
+
+CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
