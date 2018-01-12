@@ -5,3 +5,16 @@ AH00558: httpd: Could not reliably determine the server's fully qualified domain
 [Thu Jan 11 14:40:47.973452 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.6 (CentOS) configured -- resuming normal operations
 [Thu Jan 11 14:40:47.976319 2018] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
 [Thu Jan 11 14:40:58.951070 2018] [autoindex:error] [pid 6] [client 172.17.0.1:45564] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 14:45:00.540332 2018] [autoindex:error] [pid 13] [client 172.17.0.1:45580] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 14:57:23.681360 2018] [autoindex:error] [pid 12] [client 172.17.0.1:45606] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 14:57:58.973627 2018] [autoindex:error] [pid 6] [client 172.17.0.1:45618] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 14:59:37.901256 2018] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+[Thu Jan 11 15:00:08.097911 2018] [suexec:notice] [pid 1] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Thu Jan 11 15:00:08.114639 2018] [auth_digest:notice] [pid 1] AH01757: generating secret for digest authentication ...
+[Thu Jan 11 15:00:08.115847 2018] [lbmethod_heartbeat:notice] [pid 1] AH02282: No slotmem from mod_heartmonitor
+[Thu Jan 11 15:00:08.120082 2018] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.6 (CentOS) configured -- resuming normal operations
+[Thu Jan 11 15:00:08.120522 2018] [core:notice] [pid 1] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Thu Jan 11 15:00:18.039505 2018] [autoindex:error] [pid 6] [client 172.17.0.1:45632] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 15:01:37.687389 2018] [autoindex:error] [pid 13] [client 172.17.0.1:45646] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Thu Jan 11 15:02:54.639766 2018] [autoindex:error] [pid 9] [client 172.17.0.1:45658] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive

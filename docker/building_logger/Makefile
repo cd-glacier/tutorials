@@ -12,4 +12,5 @@ run-server:
 	docker run -d --name web-container \
 		-p 80:80 \
 		-v $(PWD)/log:/var/log/httpd \
-		--volumes-from log-container web-image
+		--volumes-from log-container \
+		web-image
