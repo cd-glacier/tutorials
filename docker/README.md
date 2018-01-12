@@ -68,6 +68,9 @@ docker run -it --name "test" centos:7 /bin/cal
  * --name: コンテナの名前
  * -d: deamon. バックグラウンドで実行する
  * -rm: 実行完了後に自動でコンテナを削除する
+ * -p: ポートのマッピング
+ * -v: volumeを設定する.ホストとコンテナの接続ができる
+ * --volumes-from: コンテナのvolumeの設定を全て引き継ぐ
 
 ### ポートのマッピング
 
@@ -76,6 +79,31 @@ docker run -d -p 8080:80 httpd
 ```
 
 ホストのポート8080とコンテナのポート80をマッピング
+
+### ホストとコンテナの接続
+
+```sh
+docker run -v local_path:container_volume_path
+```
+
+### コンテナのvolumeの設定を引き継ぐ
+
+```sh
+docker run -d --name web-container \
+		-p 80:80 \
+		-v $(PWD)/log:/var/log/httpd \
+		--volumes-from log-container \
+		web-image
+```
+
+上のように使うとlog-containerで設定してあるvolumeの設定を
+web-containerでも使うことができる。
+
+volume用のコンテナを用意しておき、
+永続性のデータはそのコンテナに保存しておくみたいな使い方をするらしい
+
+[このqiitaの記事](https://qiita.com/lciel/items/e21a4ede3bac7fb3ec5a)
+が非常にわかりやすい
 
 # logを確認する
 
